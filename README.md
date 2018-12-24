@@ -11,4 +11,4 @@ c/c++을 이용하여 자료구조 학습</code></pre>
 
 ### 참고
 
-<pre><code>필자의 블로그 https://monzeac.tistory.com<pre><code>
+<pre><code>필자의 블로그 https://monzeac.tistory.com</code></pre>
