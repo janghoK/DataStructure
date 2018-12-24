@@ -23,7 +23,7 @@ public class Util {
 	}
 	
 	public static String getDate() {
-		SimpleDateFormat format = new SimpleDateFormat("yyyy-mm-dd hh:mm:ss.S");
+		SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss.S");
 	    Date time = new Date();
 	    
 	    String nowTime = format.format(time);
