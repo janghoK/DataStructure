@@ -5,7 +5,8 @@
 <pre><code>MacOS Mojave 10.14.1에서 Xcode를 이용하여 진행
 c/c++을 이용하여 자료구조 학습
    1. LinkedList(Single)
-   2. LinkedList(Double)</code></pre>
+   2. LinkedList(Double)
+   3. LinkedList(Circle)</code></pre>
 
 ### 블록체인(BlockChain)
 
