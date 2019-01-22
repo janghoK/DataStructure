@@ -7,7 +7,8 @@ c/c++을 이용하여 자료구조 학습
    1. LinkedList(Single)
    2. LinkedList(Double)
    3. LinkedList(Circle)
-   4. ArrayStack</code></pre>
+   4. ArrayStack
+   5. LinkedListStack</code></pre>
 
 ### 블록체인(BlockChain)
 
