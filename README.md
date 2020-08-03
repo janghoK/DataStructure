@@ -10,7 +10,8 @@ c/c++을 이용하여 자료구조 학습
    4. ArrayStack
    5. LinkedListStack
    6. StackCalculator(Stack 응용))
-   7. LCRSTree</code></pre>
+   7. LCRSTree
+   8. BinaryTree</code></pre>
 
 ### 블록체인(BlockChain)
 
