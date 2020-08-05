@@ -29,10 +29,9 @@ void ExpressionTree::PrintTree(Node *root, int mode) {
 	if(mode == 3) printf("%c ", root->Data);
 }
 
-void ExpressionTree::BuildExpressionTree(char *postfixExpression, Node **node) {
-	int len = strlen(postfixExpression);
-	char token = postfixExpression[len-1];
-	postfixExpression[len-1] = '\0';
+void ExpressionTree::BuildExpressionTree(std::string *postfixExpression, Node **node) {
+	char token = (*postfixExpression)[(*postfixExpression).length()-1];
+	(*postfixExpression).resize((*postfixExpression).length()-1);
 
 	switch(token) {
 		case '+': case '-': case '*': case '/':
@@ -47,7 +46,8 @@ void ExpressionTree::BuildExpressionTree(char *postfixExpression, Node **node) {
 }
 
 double ExpressionTree::Evaluate(Node *tree) {
-	char temp[2];
+	//char temp[2];
+	std::string temp="";
 	double left, right, result = 0;
 	
 	if(tree == NULL) return 0;
@@ -62,9 +62,10 @@ double ExpressionTree::Evaluate(Node *tree) {
 			else if(tree->Data == '/') result = left / right;
 			break;
 		default:
-			memset(temp, 0, sizeof(temp));
-			temp[0] = tree->Data;
-			result = atof(temp);
+			//memset(temp, 0, sizeof(temp));
+			temp = tree->Data;
+			//result = atof(temp);
+			result = std::stod(temp);
 			break;
 	}
 	return result;

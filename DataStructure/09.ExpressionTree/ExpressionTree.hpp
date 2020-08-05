@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
+#include <string>
 
 class Node {
 	public:
@@ -15,6 +15,6 @@ class ExpressionTree {
 		void DestroyNode(Node *node);
 		void DestroyTree(Node *root);
 		void PrintTree(Node *root, int mode);
-		void BuildExpressionTree(char *postfixExpression, Node **node);
+		void BuildExpressionTree(std::string *postfixExpression, Node **node);
 		double Evaluate(Node *tree);
 };

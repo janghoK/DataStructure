@@ -3,9 +3,8 @@
 int main() {
 	ExpressionTree tree;
 	Node *root = NULL;
-
-	char postfixExpression[10] = "36*53-+";
-	tree.BuildExpressionTree(postfixExpression, &root);
+	std::string postfixExpression = "36*53-+";
+	tree.BuildExpressionTree(&postfixExpression, &root);
 
 	tree.PrintTree(root, 1);
 	printf("\n");
@@ -18,7 +17,6 @@ int main() {
 
 	printf("%f", tree.Evaluate(root));
 	printf("\n");
-
 
 	return 0;
 }
