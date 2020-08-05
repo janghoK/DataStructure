@@ -46,7 +46,6 @@ void ExpressionTree::BuildExpressionTree(std::string *postfixExpression, Node **
 }
 
 double ExpressionTree::Evaluate(Node *tree) {
-	//char temp[2];
 	std::string temp="";
 	double left, right, result = 0;
 	
@@ -62,9 +61,7 @@ double ExpressionTree::Evaluate(Node *tree) {
 			else if(tree->Data == '/') result = left / right;
 			break;
 		default:
-			//memset(temp, 0, sizeof(temp));
 			temp = tree->Data;
-			//result = atof(temp);
 			result = std::stod(temp);
 			break;
 	}
