@@ -1,0 +1,7 @@
+test.cpp: In function ‘int main()’:
+test.cpp:8:2: error: expected ‘,’ or ‘;’ before ‘Node’
+  Node *set2 = set.MakeSet(&b);
+  ^
+test.cpp:11:54: error: ‘set2’ was not declared in this scope
+  printf("Union(set1,set2) = %d\n", set.isUnion(set1, set2));
+                                                      ^
